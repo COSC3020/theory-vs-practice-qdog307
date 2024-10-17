@@ -15,9 +15,11 @@
 - You measure the time with 10,000 elements and it takes 100 seconds! List 3
   reasons why this could be the case, given that reasoning with the asymptotic
   complexity suggests a different time.
-  1. The tree might be inbalanced or not the perefct scenario which would change the time.
-  2. The use of memory might be changed, this would depend on the hardware used.
-  3. With java there is garbage collections which with a larger data structure would mean a longer collection cycle. 
+  1. The tree might be inbalanced or not the perefct scenario which would change the time. If this happens then the complexity becomes linear instead of logrithmic if the tree leans to one side, which means
+     that it would take longer. 
+  2. The use of memory might be changed, this would depend on the hardware used. If in the practical case that memory is miss used or managed then there can be problems in the cache. If it struggles to keep important
+    in the cache to access then there might be cache misses or memory swapping.  
+  3. With java there is garbage collections which with a larger data structure would mean a longer collection cycle. The garabge collection is what reallocates memory, and as it grows and needs to go through the memory this will add time and take longer. 
 
 Add your answers to this markdown file.
  I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
